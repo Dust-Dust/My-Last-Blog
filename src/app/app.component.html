@@ -24,6 +24,31 @@
       <div class="inner-content">
         <router-outlet></router-outlet>
       </div>
+
+      <div class="side_bar">
+        <nz-affix [nzOffsetTop]="48">
+          <div class="me_box">
+            <nz-avatar [nzSize]="128" nzSrc="../assets/images/user.jpg"></nz-avatar>
+            <!-- <nz-avatar [nzSize]="64" nzIcon="user"></nz-avatar> -->
+            <h5 nz-typography class="user_name">再花</h5>
+            <p>只会写页面的前端小B</p>
+            <button nz-button nzShape="circle"><span nz-icon nzType="github"></span></button>
+          </div>
+          <div class="website_box">
+            <div class="info" style="margin-left: 10px;margin-top: 10px;">
+              <div style="display: flex;flex-direction: row;align-items: center;">
+                <span nz-icon nzType="stock" nzTheme="outline" style="font-size:20px;"></span>
+                <h5 nz-typography style="margin-left: 4px;margin-top: 4px;">网站信息</h5>
+              </div>
+              <span class="website_info">文章总数：0</span>
+              <span class="website_info">本站访客数：0</span>
+              <span class="website_info">本站总访问量：0</span>
+              <span class="website_info">最后更新时间：2023年4月24日</span>
+            </div>
+          </div>
+        </nz-affix>
+      </div>
+
     </nz-content>
   </nz-layout>
 </nz-layout>
