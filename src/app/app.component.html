@@ -10,12 +10,12 @@
           </div>
           <!-- 路由导航按钮 -->
           <div class="route">
-            <button nz-button nzType="text" [routerLink]="['/']">首页</button>
-            <button nz-button nzType="text" [routerLink]="['/博客']">博客</button>
-            <button nz-button nzType="text" [routerLink]="['/随笔']">随笔</button>
-            <button nz-button nzType="text" [routerLink]="['/留言板']">留言板</button>
-            <button nz-button nzType="text" [routerLink]="['/关于我']">关于我</button>
-            <i nz-icon nzType="github" nzTheme="outline" class="github_icon"></i>
+            <button nz-button nzType="text" class="route_button" [routerLink]="['/']">首页</button>
+            <button nz-button nzType="text" class="route_button" [routerLink]="['/博客']">博客</button>
+            <button nz-button nzType="text" class="route_button" [routerLink]="['/随笔']">随笔</button>
+            <button nz-button nzType="text" class="route_button" [routerLink]="['/留言板']">留言板</button>
+            <button nz-button nzType="text" class="route_button" [routerLink]="['/关于我']">关于我</button>
+            <!-- <i nz-icon nzType="github" nzTheme="outline" class="github_icon"></i> -->
           </div>
         </div>
       </div>
@@ -26,13 +26,13 @@
       </div>
 
       <div class="side_bar">
-        <nz-affix [nzOffsetTop]="48">
+        <nz-affix [nzOffsetTop]="80">
           <div class="me_box">
-            <nz-avatar [nzSize]="128" nzSrc="../assets/images/user.jpg"></nz-avatar>
+            <nz-avatar [nzSize]="128" nzSrc="../assets/images/user.jpg" style="margin-top: 10px;"></nz-avatar>
             <!-- <nz-avatar [nzSize]="64" nzIcon="user"></nz-avatar> -->
             <h5 nz-typography class="user_name">再花</h5>
             <p>只会写页面的前端小B</p>
-            <button nz-button nzShape="circle"><span nz-icon nzType="github"></span></button>
+            <i nz-icon nzType="github" nzTheme="outline" class="github_icon"></i>
           </div>
           <div class="website_box">
             <div class="info" style="margin-left: 10px;margin-top: 10px;">
@@ -48,7 +48,6 @@
           </div>
         </nz-affix>
       </div>
-
     </nz-content>
   </nz-layout>
 </nz-layout>

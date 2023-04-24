@@ -70,9 +70,10 @@ nz-header {
 }
 
 nz-content {
-  margin: 24px;
+  margin-top: 24px;
   display: flex;
   justify-content: center;
+  overflow: auto;
 }
 
 /* 主体 */
@@ -82,9 +83,9 @@ nz-content {
 
   padding: 24px;
   background: #fff;
-  height: 100%;
+  height: fit-content;
   border-radius: 6px;
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 /* 右边的侧边信息栏 */
@@ -132,6 +133,7 @@ nz-content {
 
 .website_info {
   margin-top: 10px;
+  margin-left: 15px;
 }
 
 /* 顶部导航栏，采用flex布局左右布局 */
@@ -157,8 +159,9 @@ nz-content {
 }
 
 .github_icon {
-  margin-left: 50px;
+  /* margin-left: 50px; */
   font-size: large;
+  cursor: pointer;
 }
 
 .title_text {
@@ -168,4 +171,12 @@ nz-content {
 
 .user_name {
   margin-top: 10px;
+}
+
+.route_button {
+  width: 80px;
+}
+
+.route_button:hover {
+  background-color: lightgray;
 }

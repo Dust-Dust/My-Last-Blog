@@ -1,1 +1,8 @@
-<p>blog works!</p>
+<div *ngFor="let blog of testData" (click)="openBlogDetail()">
+    <nz-card class="blog_card" nzTitle="{{blog.title}}" [nzExtra]="extraTemplate">
+        <p class="blog_detail">{{ blog.detail }}</p>
+    </nz-card>
+    <ng-template #extraTemplate>
+        <p>{{ blog.date }}</p>
+    </ng-template>
+</div>
