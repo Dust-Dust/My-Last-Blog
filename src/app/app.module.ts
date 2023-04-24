@@ -15,12 +15,20 @@ import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { ShareModule } from './share.module';
 import { NzButtonModule } from 'ng-zorro-antd/button';
+import { BlogComponent } from './pages/blog/blog.component';
+import { DiaryComponent } from './pages/diary/diary.component';
+import { MessageComponent } from './pages/message/message.component';
+import { MeComponent } from './pages/me/me.component';
 
 registerLocaleData(zh);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BlogComponent,
+    DiaryComponent,
+    MessageComponent,
+    MeComponent
   ],
   imports: [
     BrowserModule,

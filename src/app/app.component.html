@@ -10,10 +10,11 @@
           </div>
           <!-- 路由导航按钮 -->
           <div class="route">
-            <button nz-button nzType="text">博客</button>
-            <button nz-button nzType="text">随笔</button>
-            <button nz-button nzType="text">留言板</button>
-            <button nz-button nzType="text">关于我</button>
+            <button nz-button nzType="text" [routerLink]="['/']">首页</button>
+            <button nz-button nzType="text" [routerLink]="['/博客']">博客</button>
+            <button nz-button nzType="text" [routerLink]="['/随笔']">随笔</button>
+            <button nz-button nzType="text" [routerLink]="['/留言板']">留言板</button>
+            <button nz-button nzType="text" [routerLink]="['/关于我']">关于我</button>
             <i nz-icon nzType="github" nzTheme="outline" class="github_icon"></i>
           </div>
         </div>
