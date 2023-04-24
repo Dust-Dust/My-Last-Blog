@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   isCollapsed = false;
+
+  goToMyGithub(): void {
+    window.open('https://github.com/Dust-Dust')
+  }
 }
